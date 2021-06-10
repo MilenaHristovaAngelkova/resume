@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(351, 79%, 9%);
+    color: hsl(120, 59%, 56%);
+    overflow-x: hidden;  
+}
+
+h1 {
+    font-family: 'Great Vibes', cursive, 'Times New Roman', Times, serif;
+    font-size: 3rem;
+    text-align: center;
+}
+
+nav {
+    font-family: 'Merriweather', serif;;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+nav li:first-child {
+    font-size: 1.8rem;
+}
+
+nav li {
+    list-style-type: none;
+}
+
+.myPic img {
+    height: 33rem;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    width: 99%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+}

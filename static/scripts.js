@@ -1,0 +1,1 @@
+// funtion that goes through each section
