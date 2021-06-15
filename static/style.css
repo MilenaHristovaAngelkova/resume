@@ -23,14 +23,14 @@ h2 {
     margin: 1rem;
 }
 
-nav {
+.mainMenu {
     font-family: 'Merriweather', serif;;
     font-weight: bold;
     font-size: 1.1rem;
 }
 
 nav li:first-child {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
 }
 
 nav li {
@@ -57,6 +57,17 @@ nav li {
 
 main {
     font-family:'Times New Roman', Times, serif, serif;
+}
+
+.coding {
+    background:linear-gradient(hsla(0, 0%, 0%, 65%), hsla(0, 0%, 0%, 65%)), url("Tech.jpg");
+    background-size: cover;
+    font-weight: bold;  
+}
+
+.projects {
+    background:linear-gradient(hsla(0, 0%, 0%, 65%), hsla(0, 0%, 0%, 65%)), url("Projects.png");
+    background-size: cover;
 }
 
 .experience h4, .dates{
