@@ -29,12 +29,29 @@ h2 {
     font-size: 1.1rem;
 }
 
-nav li:first-child {
+nav > li:first-child {
     font-size: 1.5rem;
 }
 
 nav li {
     list-style-type: none;
+    cursor: pointer;
+}
+
+.selected-item {
+    display: visible;
+}
+
+.unselected-item {
+    display: hidden;
+}
+
+.workMenu {
+    display: none;
+}
+
+#workExp:hover > ul {
+    display: block;
 }
 
 .myPic img {
