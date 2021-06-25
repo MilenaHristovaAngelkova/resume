@@ -1,8 +1,17 @@
-function changeContent(el) {
+(function startPage() {
+    hideInfo();
+    document.querySelector(".myPic").setAttribute("style", "display: block");
+})();
+
+function hideInfo() {
     let articles = document.querySelectorAll("article");
     for (let el of articles) {
         el.setAttribute("style", "display: none");
     }
+}
+
+function changeContent(el) {
+    hideInfo();
     switch(el.id) {
         case "menu":
             document.querySelector(".myPic").setAttribute("style", "display: block");
