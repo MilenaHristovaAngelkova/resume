@@ -14,7 +14,6 @@
 <body>
     <header>
         <h1>Resume</h1>
-        <h2>UNDER CONSTRUCTION</h2>
     </header>
 
     <div class="content">
@@ -25,12 +24,12 @@
                 <li><a id="menuProjects" onclick="changeContent(this)">Projects</a></li>
                 <li id="workExp"><a id="menuWork" onclick="changeContent(this)">Work Experience</a>
                     <ul class="workMenu">
-                        <li>Reporting, Processes and Training Manager</li>
-                        <li>Team Lead</li>
-                        <li>CS Legal and Responsible Gaming Associate</li>
-                        <li>Customer Service Representative</li>
-                        <li>Customer Service Representative</li>
-                        <li>Volunteering</li>
+                        <li><a id="mngr" href="#manager" onclick="showJob(this)">"Reporting, Processes and Training Manager"</a></li>
+                        <li><a id="TL-dets" href="#TL" onclick="showJob(this)">"Team Lead"</a></li>
+                        <li><a id="LRG-dets" href="#LRG-associate" onclick="showJob(this)">"CS Legal and Responsible Gaming Associate"</a></li>
+                        <li><a id="CS-rep-dets" href="#CS-rep" onclick="showJob(this)">"Customer Service Representative"</a></li>
+                        <li><a id="CS-agent-dets" href="#CS-agent" onclick="showJob(this)">"Customer Service Representative"</a></li>
+                        <li><a id="vol" href="#voluntary" onclick="showJob(this)">"Volunteering"</a></li>
                     </ul>
                 </li>
                 <li><a id="menuEdu" onclick="changeContent(this)">Education</a></li>
@@ -59,7 +58,7 @@
             </article>
             <article class="experience">
                 <h3>Work Experience</h3>
-                <section>
+                <section id="manager">
                     <h4 class="dates">2020 - 2021</h4>
                     <h4 class="job">Reporting, Processes and Training Manager<br> CS Legal and Responsible Gaming</h4>
                     <h5>GVC Services EOOD, Sofia, Bulgaria</h5>
@@ -81,9 +80,35 @@
                         <li>Working with a variety of internal tools</li>
                         <li>Acting as a Mental Health First Aider</li>
                     </ul>
-                    <button class="moreDetails">More Details</button>
+                    <button class="moreDetails" id="more-details-mngr" onclick="showMoreInfo(this)">Extended Summary</button>
+                    <ul class="extra" id="manager-more">
+                        <li>Managing all internal and external reports for our team, apart from individual performance reports 
+                            which were handled by the Operations Manager</li>
+                        <li>Preparing tailored reports, presentations and statistical analyses for Higher Management</li>
+                        <li>Overseeing audits handling</li>
+                        <li>Keeping all internal processes and standard texts up to date, improving and expanding on existing 
+                            ones and implementing new ones as needed</li>
+                        <li>Working with other teams to ensure their relevant processes are up to date and new ones are implemented 
+                            as needed</li>
+                        <li>Working closely with the Operations Manager, the Regulatory and Complaints Manager and the Head of the 
+                            Department</li>
+                        <li>Overseeing and arranging team trainings and workshops to improve quality of work</li>
+                        <li>Participating in company projects as expert regarding legal, regulatory, privacy and responsible gaming 
+                            matters and obligations</li>
+                        <li>Preparing site and application content relevant to the above areas working closely with the Compliance and 
+                            Tech teams and all other relevant teams</li>
+                        <li>Approving journeys and confluence documents for the Tech teams as per the above and overseeing and participating 
+                            in beta testing to ensure expected functionality</li>
+                        <li>Monitoring technical incidents related to legal, regulatory, privacy and responsible gaming matters to ensure timely 
+                            and adequate resolution and liaise with the Tech teams as needed</li>
+                        <li>Submitting and monitoring all requests on behalf of my team for new technical implementations</li>
+                        <li>Working closely with all departments and management teams in the company as needed</li>
+                        <li>Participating in projects with the Tech teams to plan, build and implement new admin tools for the team in 
+                            cooperation with the Operations Manager and the Head of the Department</li>
+                        <li>Acting as a Mental Health First Aider</li>            
+                    </ul>
                 </section>
-                <section>
+                <section id="TL">
                     <h4 class="dates">2019 - 2020</h4>
                     <h4 class="job">CS Legal and Responsible Gaming Team Lead</h4>
                     <h5>GVC Services EOOD, Sofia, Bulgaria</h5>
@@ -103,9 +128,38 @@
                         <li>Providing conflict resolution where needed</li>
                         <li>Acting as a Mental Health First Aider</li>
                     </ul>
-                    <button class="moreDetails">More Details</button>
+                    <button class="moreDetails" id="more-details-TL" onclick="showMoreInfo(this)">Extended Summary</button>
+                    <ul class="extra" id="TL-more">
+                        <li>Managing directly 6 people</li>
+                        <li>Preparing and improving the organization of work together with 2 other team leads (daily tasks distribution, 
+                            additional projects distribution and completion, internal trainings and onboarding, monthly schedules and 
+                            holidays planning)</li>
+                        <li>Assessment of current work needs and reporting on anticipated future needs in cooperation with another team 
+                            lead and the head of the department to ensure the maintenance of an adequate work force while taking on more
+                             work</li>
+                        <li>Weekly internal reporting on different areas of the team performance and monthly internal reporting on 
+                            different areas of individual team member performance</li>
+                        <li>Carrying out feedbacks, appraisals and individual plans for improvement</li>
+                        <li>Updating and improving existing processes and implementing new ones in cooperation with the other team leads 
+                            and the head of the department</li>
+                        <li>Taking final decisions on high level cases upon in-depth case review and involving Higher Management and 
+                            other specialized teams where needed</li>
+                        <li>Training, coaching and mentoring my team members as well as other teams as needed either online or on-spot 
+                            at different locations</li>
+                        <li>Providing conflict resolution and mediation where needed</li>
+                        <li>Acting as a Mental Health First Aider</li>
+                        <li>Leading and working with the team on the preparation of audits and other externally required communication, 
+                            reports and certifications</li>
+                        <li>Monitoring the fixing of technical problems, as well as arranging the implementation of new technical 
+                            functionalities together with the head of the department and the Tech teams</li>
+                        <li>Liaising internationally with all departments and management teams within the company as needed</li>
+                        <li>Providing expertise for all company queries regarding legal and regulatory matters, responsible gaming, 
+                            and privacy matters and obligations</li>
+                        <li>Participating in company projects and training plans to provide expertise and monitor that our obligations 
+                            in these areas are met</li>
+                    </ul>
                 </section>
-                <section>
+                <section id="LRG-associate">
                     <h4 class="dates">2017 - 2019</h4>
                     <h4 class="job">CS Legal and Responsible Gaming Associate</h4>
                     <h5>GVC Services EOOD (former Bwin.Party Services EOOD), Sofia, Bulgaria</h5>
@@ -121,9 +175,33 @@
                         <li>Providing online and on-spot training to new teams joining the company at other locations, as well as 
                             induction trainings for new joiners and refresher trainings for existing teams</li>    
                     </ul>
-                    <button class="moreDetails">More Details</button>
+                    <button class="moreDetails" id="more-details-LRG" onclick="showMoreInfo(this)">Extended Summary</button>
+                    <ul class="extra" id="LRG-more">
+                        <li>Reactive handling of:</li>
+                            <ul>
+                                <li>cases related to responsible gaming, including cases concerning heavy mental health problems</li>
+                                <li>complex complaints and disputes, including preparation of high level in-depth case reviews and 
+                                    final responses on behalf of the company to high level disputes</li>
+                                <li>privacy related queries and complaints, including providing personal data records and arranging 
+                                    personal data anonymization</li>
+                            </ul>
+                        <li>Proactive monitoring of clients' behaviour to safeguard against the development of gaming-related problems 
+                            or interfere where such were already present</li>
+                        <li>Liaising internationally with:</li>
+                            <ul>
+                                <li>the Legal, Compliance, Anti Money Laundering and Tech teams, as well as with all other teams 
+                                    within the company depending on case specifics</li>
+                                <li>external regulators, alternative dispute resolution providers, lawyers, police and other 
+                                    investigation agencies</li>
+                            </ul>
+                        <li>Participating in the preparation of internal processes, audits and other external and internal reporting</li>
+                        <li>Serving as expert point of contact for queries across the company regarding legal and regulatory matters, 
+                            responsible gaming, and privacy matters and obligations</li>
+                        <li>Providing online and on-spot training to new teams joining the company at other locations, as well as induction 
+                            training for new joiners and refresher trainings for other teams</li>
+                    </ul>
                 </section>
-                <section>
+                <section id="CS-rep">
                     <h4 class="dates">2012 - 2017</h4>
                     <h4 class="job">Customer Service Representative</h4>
                     <h5>Bwin.Party Services EOOD, Sofia, Bulgaria</h5>
@@ -138,7 +216,7 @@
                         <li>Updating team processes</li>
                     </ul>
                 </section>
-                <section>
+                <section id="CS-agent">
                     <h4 class="dates">February - August 2012</h4>
                     <h4 class="job">Customer Service Representative</h4>
                     <h5>V-Online Systems, Sofia, Bulgaria</h5>
@@ -151,7 +229,7 @@
                         <li>Escalating complex issues</li>
                     </ul>
                 </section>
-                <section>
+                <section id="voluntary">
                     <h4 class="dates">December 2011 – March 2012</h4>
                     <h4 class="job">Volunteer (Occasional)</h4>
                     <h5>National Centre for Drugs and Addictions, Sofia, Bulgaria</h5>
@@ -221,5 +299,6 @@
                     github.com/MilenaHristovaAngelkova</a></p>
         </address>
     </footer>
+    <script>window.onload=startPage()</script>
 </body>
 </html>

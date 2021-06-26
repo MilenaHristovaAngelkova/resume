@@ -1,7 +1,7 @@
-(function startPage() {
+function startPage() {
     hideInfo();
     document.querySelector(".myPic").setAttribute("style", "display: block");
-})();
+};
 
 function hideInfo() {
     let articles = document.querySelectorAll("article");
@@ -37,6 +37,44 @@ function changeContent(el) {
     }
 }
 
-// function showWorkMenu() {
-//     document.querySelector(".workMenu").
-// }
+function showJob(elem) {
+    hideInfo();
+    document.querySelector(".experience").setAttribute("style", "display: block");
+
+    switch (elem.id) {
+        case "mngr":
+            elem.href = "#manager";
+            break;
+        case "TL-dets":
+            elem.href = "#TL";
+            break;
+        case "LRG-dets":
+            elem.href = "#LRG-associate";
+            break;
+        case "CS-rep-dets":
+            elem.href = "#CS-rep";
+            break;
+        case "CS-agent-dets":
+            elem.href = "#CS-agent";
+            break;
+        case "vol":
+            elem.href = "#voluntary";
+            break;
+    }
+
+    elem.click();
+}
+
+function showMoreInfo(element) {   
+    switch(element.id) {
+        case "more-details-mngr":
+            document.querySelector("#manager-more").setAttribute("style", "display: block");
+            break;
+        case "more-details-TL":
+            document.querySelector("#TL-more").setAttribute("style", "display: block");
+            break;
+        case "more-details-LRG":
+            document.querySelector("#LRG-more").setAttribute("style", "display: block");
+            break;
+    }
+}

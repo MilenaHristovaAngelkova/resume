@@ -2,12 +2,18 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: hsl(351, 79%, 9%);
     color: hsl(120, 59%, 56%);
     overflow-x: hidden;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
     margin: 0;
-    padding: 0; 
 }
 
 h1 {
@@ -50,8 +56,17 @@ nav li {
     display: none;
 }
 
+.workMenu a {
+    color: inherit;
+    text-decoration: none;
+}
+
 #workExp:hover > ul {
     display: block;
+}
+
+.extra {
+    display: none;;
 }
 
 .myPic img {
@@ -102,5 +117,6 @@ footer {
     display: flex;
     justify-content: center;
     background: linear-gradient(to top, black 0%, black 10%, black 30%, transparent 90%);
+    margin-top: auto;
 }
 
