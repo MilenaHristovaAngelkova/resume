@@ -7,24 +7,21 @@ html {
 }
 
 body {
-    background-color: hsl(351, 79%, 9%);
-    color: hsl(120, 59%, 56%);
+    background-color: hsl(245, 63%, 12%);
+    color: hsl(39, 67%, 76%);
     overflow-x: hidden;
+    overflow-y: auto;
     min-height: 100vh;
-    display: flex;
+    display: flex;  
     flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
     margin: 0;
 }
 
 h1 {
     font-family: 'Great Vibes', cursive, 'Times New Roman', Times, serif;
-    font-size: 3rem;
-    text-align: center;
-    margin: 1rem;
-}
-
-h2 {
-    color: hsl(0, 78%, 47%);
+    font-size: 4rem;
     text-align: center;
     margin: 1rem;
 }
@@ -32,11 +29,11 @@ h2 {
 .mainMenu {
     font-family: 'Merriweather', serif;;
     font-weight: bold;
-    font-size: 1.1rem;
+    font-size: 1.5rem;
 }
 
 nav > li:first-child {
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 nav li {
@@ -74,7 +71,7 @@ nav li {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 40%;
+    width: 22rem;
 }
 
 .content {
@@ -82,16 +79,61 @@ nav li {
     grid-template-columns: 1fr 3fr 1fr;
 }
 
-/* main {
-    display: flex;
-    justify-content: center;
-} */
+@media screen and (min-width: 580px) and (max-width: 980px) {
+    .mainMenu {
+        margin-right: 20px;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .content {
+        display: inline;
+    }
+
+    .mainMenu {
+        margin-right: 20px;
+        font-size: smaller;
+    }
+
+    h1 {
+        font-size: larger;
+    }
+
+    .myPic img{
+        height: 15em;
+        width: 9em;        
+    }
+
+    main h4,
+    main h5 {
+        font-size: smaller;
+    }
+
+    main h3 {
+        font-size: small;
+    }
+
+    main ul li,
+    main p {
+        font-size: small;
+    }
+
+    footer p {
+        font-size: small;
+    }
+}
 
 main {
     font-family:'Times New Roman', Times, serif, serif;
+    flex-basis: 100%;
 }
 
-.coding {
+main li, p {
+    color: hsl(39, 69%, 82%);
+    font-size: 1.2rem;
+}
+
+/* .coding {
     background:linear-gradient(hsla(0, 0%, 0%, 65%), hsla(0, 0%, 0%, 65%)), url("Tech.jpg");
     background-size: cover;
     font-weight: bold;  
@@ -100,6 +142,15 @@ main {
 .projects {
     background:linear-gradient(hsla(0, 0%, 0%, 65%), hsla(0, 0%, 0%, 65%)), url("Projects.png");
     background-size: cover;
+} */
+
+h3 {
+    font-size: 1.5rem;
+}
+
+h4, h5 {
+    font-size: larger;
+    color:hsl(39, 68%, 79%);
 }
 
 .experience h4, .dates{
@@ -108,6 +159,10 @@ main {
 
 .experience h5, .job{
     margin-top: 0;
+}
+
+button {
+    cursor: pointer;
 }
 
 footer {
