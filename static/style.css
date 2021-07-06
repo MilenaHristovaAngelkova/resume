@@ -66,6 +66,20 @@ nav li {
     display: none;;
 }
 
+button {
+    background-color: hsl(245, 63%, 12%);
+    color:hsl(39, 69%, 82%);
+    border: solid 3px hsl(39, 69%, 82%);
+    border-radius: 0.5em;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: hsl(39, 69%, 82%);
+    color:hsl(245, 63%, 12%);
+}
+
 .myPic img {
     height: 33rem;
     display: block;
@@ -132,17 +146,6 @@ main li, p {
     color: hsl(39, 69%, 82%);
     font-size: 1.2rem;
 }
-
-/* .coding {
-    background:linear-gradient(hsla(0, 0%, 0%, 65%), hsla(0, 0%, 0%, 65%)), url("Tech.jpg");
-    background-size: cover;
-    font-weight: bold;  
-}
-
-.projects {
-    background:linear-gradient(hsla(0, 0%, 0%, 65%), hsla(0, 0%, 0%, 65%)), url("Projects.png");
-    background-size: cover;
-} */
 
 h3 {
     font-size: 1.5rem;
