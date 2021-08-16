@@ -62,7 +62,8 @@ nav li {
     display: block;
 }
 
-.extra {
+.extra,
+.lessDetails {
     display: none;;
 }
 
@@ -123,7 +124,8 @@ button:hover {
         font-size: smaller;
     }
 
-    main h3 {
+    main h3,
+    button {
         font-size: small;
     }
 
@@ -133,7 +135,31 @@ button:hover {
     }
 
     footer p {
-        font-size: small;
+        font-size: small;  
+    }
+
+    footer p a {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 275px) {
+    .myPic img{
+        height: 12em;
+        width: 7em;        
+    }
+
+    main p,
+    h3 {
+        padding: 0.8em 0.8em;
+    }
+
+    main ul li {
+             padding-right: 0.8em;
+    }
+
+    footer p {
+        font-size: 0.33em;  
     }
 }
 
@@ -170,11 +196,16 @@ button {
 
 footer {
     height: 3rem;
+    font-size: 2rem;
     position: sticky;
     bottom: 0;
     display: flex;
     justify-content: center;
     background: linear-gradient(to top, black 0%, black 10%, black 30%, transparent 90%);
     margin-top: auto;
+}
+
+footer a {
+    margin: 0 0.8rem;
 }
 

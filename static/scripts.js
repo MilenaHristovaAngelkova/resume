@@ -69,12 +69,32 @@ function showMoreInfo(element) {
     switch(element.id) {
         case "more-details-mngr":
             document.querySelector("#manager-more").setAttribute("style", "display: block");
+            document.querySelector("#less-details-mngr").setAttribute("style", "display: block");
             break;
         case "more-details-TL":
             document.querySelector("#TL-more").setAttribute("style", "display: block");
+            document.querySelector("#less-details-TL").setAttribute("style", "display: block");
             break;
         case "more-details-LRG":
             document.querySelector("#LRG-more").setAttribute("style", "display: block");
+            document.querySelector("#less-details-LRG").setAttribute("style", "display: block");
+            break;
+    }
+}
+
+function showLessInfo(element) {   
+    switch(element.id) {
+        case "less-details-mngr":
+            document.querySelector("#manager-more").setAttribute("style", "display: none");
+            document.querySelector("#less-details-mngr").setAttribute("style", "display: none");
+            break;
+        case "less-details-TL":
+            document.querySelector("#TL-more").setAttribute("style", "display: none");
+            document.querySelector("#less-details-TL").setAttribute("style", "display: none");
+            break;
+        case "less-details-LRG":
+            document.querySelector("#LRG-more").setAttribute("style", "display: none");
+            document.querySelector("#less-details-LRG").setAttribute("style", "display: none");
             break;
     }
 }
